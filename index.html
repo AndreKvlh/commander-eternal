@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commander Eternal</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Início</li>
+                <li>O que é</li>
+                <li>Regras</li>
+                <li>Banlist</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <!--Inserir imagem no fundo do ditame-->
+        <h1>Commander Eternal</h1>
+        <p>Uma nova forma de ver o formato</p>
+    </section>
+    <section id="oq">
+        <!--Inserir imagem antes em parallax-->
+        <h1>O que é o Commander Eternal?</h1>
+        <p>
+            Commander Eternal é uma variante do formato Commander a fim de trazer uma nova forma de equilíbrio e montagem de decks, seguindo um <b>sistema de pontuação</b>, no qual cada carta recebe uma pontuação e o deck como um todo tem uma restrição de pontos, que é conforme cada playgroup.
+        </p>
+        <p>
+            Esta variante foi desenvolvida por Estevan Carvalho Ribeiro em reação às mudanças recentes no formato, em especial o advento dos brackets, e também a formatos com restrição de budget. Ambas abordagens são problemáticas pois não equilibram direito os decks e, no caso de budget, limita até mesmo outros arquétipos de brilhar. Neste sentido, surge o Commander Eternal para ser uma nova abordagem que não puna o deckbuilder.
+        </p>
+    </section>
+    <section id="regras">
+        <!--Inserir imagem antes em parallax-->
+        <h1>Regras</h1>
+        <p>
+            As regras do Commander Eternal seguem as mesmas do Commander como todos conhecem, que são:
+        </p>
+        <ul>
+            <li>Cada jogador possui deck de 100 cartas, tendo uma criatura, veículo ou espaçonave lendário que será o <b>comandante</b>;</li>
+            <li>A exceção de terrenos básicos e cartas que permitem mais de uma (ex.: Relentless Rats), cada carta só pode ter <b>uma cópia</b>;</li>
+            <li>Cada jogador começa com 40 pontos de vida, e caso o jogador chegue a zero ou se ele tomar 21 de dano de comandante, ele perde.</li>
+        </ul>
+        <p>
+            A diferença do Commander Eternal <b>não usa o sistema de brackets e game changers</b>. Os decks são construídos com um limite de pontos, que é definido pela mesa, playgroup ou evento, e a pontuação do deck não pode ultrapassar este valor. O valor do deck é dado por cada carta singular (incluindo comandante) no qual sua pontuação é calculada da seguinte forma:
+        </p>
+        <p id="central"><b>CME x Raridade</b></p>
+        <p>
+            <b>CME</b> é o <b>Custo de Mana Efetivo</b>, que é basicamente o valor de mana pago de fato para ser conjurada, ou seja, é o menor custo dentre o custo da carta e o alternativo. Por exemplo: uma <b>Force of Will</b> tem como custo original 3UU porém é muito difícil você ver alguém de fato pagando cinco manas para conjurar uma Force, sendo muito mais utilizado seu custo que permite conjurar ela por zero, ou seja, o CME de uma Force of Will é <b>zero</b>.
+        </p>
+        <p>
+            O mesmo se aplica a outros diversos custos alternativos, como o do <b>Mulldrifter</b>, que normal ele custa 4U porém conjurando via evoke ele custa 2U, ou seja, o <b>CME</b> dele é de <b>três manas</b>. Porém, essa regra só se aplica se a carta por si tiver um custo alternativo barato, o que é diferente de cartas como <b>Omniscience</b>, que permite conjurar mágicas de graça, porém isso não torna todas as mágicas com CME zero pelo fato de ser condicional a ter o encantamento em campo.
+        </p>
+        <p>
+            Já a raridade é o mais simples de todos pois fala da <b>raridade</b> da carta. Algumas cartas, como a própria Force of Will, foram reprintadas em diversos tipos de raridades. Neste caso, leve em conta a raridade <b>mais baixa</b> da carta. Por exemplo: <b>Swords to Plowshares</b> é uma carta incomum porém em <b>Secret Lairs</b> e em coleções como <b>Special Guest</b> saíram versões raras e míticas dela. Para fins de pontuação e taxação, Swords to Plowshares é considerado uma carta <b>incomum</b>, independente da versão dela.
+        </p>
+        <p>
+            A tabela abaixo mostra como que fica a pontuação de cartas baseadas na fórmula explicada acima:
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>CME</th>
+                    <th>Comum (x1)</th>
+                    <th>Incomum (x2)</th>
+                    <th>Rara (x3)</th>
+                    <th>Mítica (x4)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>9</td>
+                    <td>18</td>
+                    <td>27</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>8</td>
+                    <td>16</td>
+                    <td>24</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>21</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>18</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>10+</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            Basicamente, quanto maior o CME, menor a pontuação, então uma carta com CME zero custa dez pontos, CME um custa nove pontos e por aí vai. Aí após isso é aplicado o multiplicador conforme a raridade, então pegando por exemplo a carta citada anteriormente (Swords to Plowshares), o CME dela é de nove e, sendo uma carta incomum, tem um multiplicador de x2, portanto o custo em pontos será de 9 x 2 = 18.
+        </p>
+        <p>
+            É importante ressaltar que algumas cartas, devido ao power level, terão taxações adicionais em pontuações. Para mais informações, verifique a sessão de <b>cartas banidas, restritas e taxadas</b>.
+        </p>
+        <p>
+            Para lhe auxiliar nos cálculos de pontuação do seu deck, use <a href="#">esta planilha aqui</a>.
+        </p>
+    </section>
+    <section id="banidas">
+        <!--Inserir imagem antes em parallax-->
+        <h1>Cartas Banidas, Restritas e Taxadas</h1>
+        <p>
+            Aqui iremos usar uma banlist diferente da que atualmente o Rules Committee do Commander utiliza, pois iremos ter lista de cartas <b>banidas</b> mas também cartas <b>restritas e taxadas</b>. Primeiramente, vamos falar das cartas banidas que não podem nem estar no deck e muito menos como comandante:
+        </p>
+        <ul>
+            <li>Todas as cartas que referem a mecânica de “ante” (<a href="#">lista</a>)</li>
+            <li>Todas as cartas removidas dos formatos construídos devido a racismo (<a href="#">lista</a>)</li>
+            <li>Todas as cartas do tipo Conspiracy (<a href="#">lista</a>)</li>
+        </ul>
+        <h2>Terrenos:</h2>
+        <ul>
+            <li>Karakas</li>
+            <li>Library of Alexandria</li>
+            <li>Tolarian Academy</li>
+        </ul>
+        <h2>Encantamentos:</h2>
+        <ul>
+            <li>Fastbond</li>
+            <li>Yawgmoth's Bargain</li>
+        </ul>
+        <h2>Artefatos:</h2>
+        <ul>
+            <li>Black Lotus</li>
+            <li>Chaos Orb</li>
+            <li>Mox Emerald</li>
+            <li>Mox Jet</li>
+            <li>Mox Ruby</li>
+            <li>Mox Pearl</li>
+            <li>Mox Sapphire</li>
+            <li>Time Vault</li>
+        </ul>
+        <h2>Mágicas Instantâneas e Feitiços:</h2>
+        <ul>
+            <li>Ancestral Recall</li>
+            <li>Balance</li>
+            <li>Channel</li>
+            <li>Falling Star</li>
+            <li>Shahrazad</li>
+            <li>Time Walk</li>
+            <li>Tinker</li>
+        </ul>
+        <p>
+            Agora vamos falar das cartas <b>restritas e taxadas</b>. As cartas restritas são cartas que são banidas apenas ou da zona de comando, ou de ser companion ou dentro do deck. Tanto as cartas restritas quanto as taxadas são cartas que, para além da pontuação padrão que colocamos anteriormente, terão uma taxa adicional e, caso necessário, um multiplicador de taxa. Este multiplicador surge para taxar cartas que, mesmo dentro da lista, se tornam cartas muito poderosas.
+        </p>
+        <p>
+           Toda carta restrita terá seu valor de pontos multiplicado por 65. Por exemplo, <b>Griselbrand</b> tem o CME de oito e é uma carta mítica, possuindo uma pontuação base de <b>oito pontos</b>. Pelo fato de ser restrita, podendo ser apenas comandante, a pontuação final da carta é de 8 x 65 = <b>520</b> pontos. 
+        </p>
+        <p>
+            Algumas cartas restritas e taxadas vão possuir um <b>multiplicador adicional</b>, que é aplicado após o cálculo da pontuação. Por exemplo: <b>Golos, Tireless Pilgrim</b>, que tem o CME de cinco e é uma carta rara, possuindo uma pontuação base de <b>quinze pontos</b>. Como é uma carta restrita, iremos multiplicar por 65, ficando 15 x 65 = 975, e vendo ele na lista percebe-se que tem um multiplicador adicional de 1.5x, que aplicado a pontuação teremos um custo equivalente a 975 x 1.5 = <b>1462</b> pontos.
+        </p>
+        <p>
+            Abaixo está a lista de restritas, incluindo o multiplicador de taxação adicional:
+        </p>
+        <h2>Restritas da zona de comando:</h2>
+        <ul>
+            <li>Erayo, Soratami Ascendant // Erayo’s Essence (1.5x)</li>
+            <li>Golos, Tireless Pilgrim (1.5x)</li>
+            <li>Leovold, Emissary of Trest (1.5x)</li>
+            <li>Nadu, Winged Wisdom (1.5x)</li>
+            <li>Rofellos, Llanowar Emissary (1.5x)</li>
+        </ul>
+        <h2>Restritas do deck (podendo ser SOMENTE comandante):</h2>
+        <ul>
+            <li>Emrakul, the Aeons Torn</li>
+            <li>Griselbrand</li>
+            <li>Iona, Shield of Emeria</li>
+        </ul>
+        <h2>Restritas como companion:</h2>
+        <ul>
+            <li>Lutri, the Spellchaser</li>
+        </ul>
+        <p>
+            Por fim, vamos falar das cartas <b>taxadas</b>, estas não estão restritas em nenhuma zona, porém elas terão uma taxação base, no qual a pontuação da carta será multiplicada por 50. Seguindo a mesma lógica das restritas, terão cartas que devido ao seu power level necessitarão de uma taxação adicional, tendo então um <b>multiplicador adicional</b> que pode ser ajustado ou implantado caso uma carta se mostre forte demais.
+        </p>
+        <p>
+            A lista de cartas taxadas, junto com os multiplicadores adicionais, está logo abaixo:
+        </p>
+        <h2>Criaturas:</h2>
+        <ul>
+            <li>Hullbreacher (1.5x)</li>
+            <li>Prophet of Kruphix (1.5x)</li>
+            <li>Primeval Titan (1.5x)</li>
+            <li>Sylvan Primordial (1.5x)</li>
+            <li>Sundering Titan (1.5x)</li>
+            <li>Dockside Extortionist (1.5x)</li>
+            <li>Opposition Agent</li>
+            <li>Drannith Magistrate</li>
+            <li>Consecrated Sphinx</li>
+            <li>Thassa’s Oracle</li>
+            <li>Braids, Cabal Minion</li>
+            <li>Orcish Bowmasters</li>
+            <li>Tergrid, God of Fright</li>
+            <li>Seedborn Muse</li>
+            <li>Grand Arbiter Augustin IV</li>
+            <li>Notion Thief</li>
+            <li>Esper Sentinel</li>
+            <li>Kinnan, Bonder Prodigy</li>
+            <li>Urza, Lord High Artificer</li>
+            <li>Winota, Joiner of Forces</li>
+            <li>Yuriko, the Tiger’s Shadow</li>
+        </ul>
+        <h2>Artefatos:</h2>
+        <ul>
+            <li>Mana Crypt (1.5x)</li>
+            <li>Jeweled Lotus (1.5x)</li>
+            <li>Lion’s Eye Diamond</li>
+            <li>Chrome Mox</li>
+            <li>Mox Diamond</li>
+            <li>Mana Vault</li>
+            <li>Sol Ring</li>
+            <li>Paradox Engine (1.5x)</li>
+            <li>Grim Monolith</li>
+            <li>The One Ring</li>
+            <li>Panoptic Mirror</li>
+            <li>Bolas’s Citadel</li>
+        </ul>
+        <h2>Mágicas Instantâneas:</h2>
+        <ul>
+            <li>Flash (1.5x)</li>
+            <li>Enlightened Tutor (1.5x)</li>
+            <li>Teferi’s Protection</li>
+            <li>Cyclonic Rift</li>
+            <li>Force of Will (1.5x)</li>
+            <li>Force of Negation</li>
+            <li>Fierce Guardianship</li>
+            <li>Deadly Rollick</li>
+            <li>Deflecting Swat</li>
+            <li>Mana Drain (1.5x)</li>
+            <li>Gifts Ungiven</li>
+            <li>Intuition</li>
+            <li>Mystical Tutor (1.5x)</li>
+            <li>Ad Nauseam</li>
+            <li>Vampiric Tutor (1.5x)</li>
+            <li>Crop Rotation</li>
+            <li>Worldly Tutor (1.5x)</li>
+        </ul>
+        <h2>Planeswalker:</h2>
+        <ul>
+            <li>Narset, Parter of Veils</li>
+        </ul>
+        <h2>Encantamentos:</h2>
+        <ul>
+            <li>Limited Resources (1.5x)</li>
+            <li>Recurring Nightmare (1.5x)</li>
+            <li>Humility</li>
+            <li>Smothering Tithe</li>
+            <li>Mystic Remora (1.5x)</li>
+            <li>Rhystic Study (2.0x)</li>
+            <li>Necropotence</li>
+            <li>Underworld Breach</li>
+            <li>Survival of the Fittest (1.5x)</li>
+            <li>Aura Shards</li>
+        </ul>
+        <h2>Feitiços:</h2>
+        <ul>
+            <li>Trade Secrets (1.5x)</li>
+            <li>Upheaval</li>
+            <li>Biorhythm</li>
+            <li>Demonic Tutor (2.0x)</li>
+            <li>Imperial Seal</li>
+            <li>Gamble</li>
+            <li>Jeska’s Will</li>
+            <li>Natural Order</li>
+        </ul>
+        <h2>Terrenos:</h2>
+        <ul>
+            <li>Urza's Saga</li>
+            <li>Serra’s Sanctum (1.5x)</li>
+            <li>Gaea’s Cradle (1.5x)</li>
+            <li>Ancient Tomb (1.5x)</li>
+            <li>City of Traitors</li>
+            <li>Field of the Dead</li>
+            <li>Glacial Chasm</li>
+            <li>The Tabernacle at Pendrell Vale (1.5x)</li>
+            <li>Mishra’s Workshop (1.5x)</li>
+        </ul>
+    </section>
+    <footer>
+        <p>Copyright 2026(c) Estevan Carvalho Ribeiro, todos os direitos reservados</p>
+        <p>Site criado por Andre Càrvalho</p>
+    </footer>
+</body>
+</html>
