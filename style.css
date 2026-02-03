@@ -1,0 +1,120 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header > nav {
+    padding: 10px;
+    background-color: rgb(36, 35, 35);
+}
+
+header > nav > ul > li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white
+}
+
+#inicio {
+    background-image: url(images/sol-ring-full.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+
+#titulo {
+    position: relative;
+    top: 200px;
+    font-size: 2em;
+    text-shadow: 1px 1px black;
+}
+
+#imagem {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+}
+
+.img-01 {
+    background-image: url(images/aurelia-full.jpg);
+}
+
+.img-02 {
+    background-image: url(images/anguished-unmaking-full.jpg);
+}
+
+.img-03 {
+    background-image: url(images/tarkir-full.jpg);
+}
+
+section h1, section h2, section p, section ul, section table {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+section li {
+    width: fit-content;
+}
+
+section li.hover-img:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+
+
+#overlay {
+    position: fixed;
+    pointer-events: none;
+    display: none;
+    z-index: 999;
+}
+
+#overlay img {
+    width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0);
+}
+
+section table, section th, section td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+section table {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+section th, section td {
+    padding: 5px;
+}
+
+section tr:nth-child(odd) {background-color: rgb(233, 232, 232);}
+
+footer {
+    background-color: rgb(36, 35, 35);
+    padding: 15px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.5em;
+    padding-bottom: 2px;
+    color: white;
+}

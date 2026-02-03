@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Commander Eternal</title>
 </head>
 <body>
@@ -17,12 +18,12 @@
         </nav>
     </header>
     <section id="inicio">
-        <!--Inserir imagem no fundo do ditame-->
-        <h1>Commander Eternal</h1>
-        <p>Uma nova forma de ver o formato</p>
+        <div id="titulo">
+            <h1>Commander Eternal</h1>
+            <p>Uma nova forma de ver o formato</p>
+        </div>
     </section>
     <section id="oq">
-        <!--Inserir imagem antes em parallax-->
         <h1>O que é o Commander Eternal?</h1>
         <p>
             Commander Eternal é uma variante do formato Commander a fim de trazer uma nova forma de equilíbrio e montagem de decks, seguindo um <b>sistema de pontuação</b>, no qual cada carta recebe uma pontuação e o deck como um todo tem uma restrição de pontos, que é conforme cada playgroup.
@@ -31,8 +32,8 @@
             Esta variante foi desenvolvida por Estevan Carvalho Ribeiro em reação às mudanças recentes no formato, em especial o advento dos brackets, e também a formatos com restrição de budget. Ambas abordagens são problemáticas pois não equilibram direito os decks e, no caso de budget, limita até mesmo outros arquétipos de brilhar. Neste sentido, surge o Commander Eternal para ser uma nova abordagem que não puna o deckbuilder.
         </p>
     </section>
+    <section id="imagem" class="img-01"></section>
     <section id="regras">
-        <!--Inserir imagem antes em parallax-->
         <h1>Regras</h1>
         <p>
             As regras do Commander Eternal seguem as mesmas do Commander como todos conhecem, que são:
@@ -158,8 +159,8 @@
             Para lhe auxiliar nos cálculos de pontuação do seu deck, use <a href="#">esta planilha aqui</a>.
         </p>
     </section>
+    <section id="imagem" class="img-02"></section>
     <section id="banidas">
-        <!--Inserir imagem antes em parallax-->
         <h1>Cartas Banidas, Restritas e Taxadas</h1>
         <p>
             Aqui iremos usar uma banlist diferente da que atualmente o Rules Committee do Commander utiliza, pois iremos ter lista de cartas <b>banidas</b> mas também cartas <b>restritas e taxadas</b>. Primeiramente, vamos falar das cartas banidas que não podem nem estar no deck e muito menos como comandante:
@@ -171,35 +172,35 @@
         </ul>
         <h2>Terrenos:</h2>
         <ul>
-            <li>Karakas</li>
-            <li>Library of Alexandria</li>
-            <li>Tolarian Academy</li>
+            <li class="hover-img" data-img="images/cards/karakas.jpg">Karakas</li>
+            <li class="hover-img" data-img="images/cards/library-of-alexandria.jpg">Library of Alexandria</li>
+            <li class="hover-img" data-img="images/cards/tolarian-academy.jpg">Tolarian Academy</li>
         </ul>
         <h2>Encantamentos:</h2>
         <ul>
-            <li>Fastbond</li>
-            <li>Yawgmoth's Bargain</li>
+            <li class="hover-img" data-img="images/cards/fastbond.jpg">Fastbond</li>
+            <li class="hover-img" data-img="images/cards/yawgmoth-bargain.jpg">Yawgmoth's Bargain</li>
         </ul>
         <h2>Artefatos:</h2>
         <ul>
-            <li>Black Lotus</li>
-            <li>Chaos Orb</li>
-            <li>Mox Emerald</li>
-            <li>Mox Jet</li>
-            <li>Mox Ruby</li>
-            <li>Mox Pearl</li>
-            <li>Mox Sapphire</li>
-            <li>Time Vault</li>
+            <li class="hover-img" data-img="images\cards\black-lotus.jpg">Black Lotus</li>
+            <li class="hover-img" data-img="images\cards\chaos-orb.jpg">Chaos Orb</li>
+            <li class="hover-img" data-img="images\cards\mox-emerald.jpg">Mox Emerald</li>
+            <li class="hover-img" data-img="images\cards\mox-jet.jpg">Mox Jet</li>
+            <li class="hover-img" data-img="images\cards\mox-pearl.jpg">Mox Pearl</li>
+            <li class="hover-img" data-img="images\cards\mox-ruby.jpg">Mox Ruby</li>
+            <li class="hover-img" data-img="images\cards\mox-sapphire.jpg">Mox Sapphire</li>
+            <li class="hover-img" data-img="images\cards\time-vault.jpg">Time Vault</li>
         </ul>
         <h2>Mágicas Instantâneas e Feitiços:</h2>
         <ul>
-            <li>Ancestral Recall</li>
-            <li>Balance</li>
-            <li>Channel</li>
-            <li>Falling Star</li>
-            <li>Shahrazad</li>
-            <li>Time Walk</li>
-            <li>Tinker</li>
+            <li class="hover-img" data-img="images\cards\ancestral-recall.jpg">Ancestral Recall</li>
+            <li class="hover-img" data-img="images\cards\balance.jpg">Balance</li>
+            <li class="hover-img" data-img="images\cards\channel.jpg">Channel</li>
+            <li class="hover-img" data-img="images\cards\falling-star.jpg">Falling Star</li>
+            <li class="hover-img" data-img="images\cards\shahrazad.jpg">Shahrazad</li>
+            <li class="hover-img" data-img="images\cards\time-walk.jpg">Time Walk</li>
+            <li class="hover-img" data-img="images\cards\tinker.jpg">Tinker</li>
         </ul>
         <p>
             Agora vamos falar das cartas <b>restritas e taxadas</b>. As cartas restritas são cartas que são banidas apenas ou da zona de comando, ou de ser companion ou dentro do deck. Tanto as cartas restritas quanto as taxadas são cartas que, para além da pontuação padrão que colocamos anteriormente, terão uma taxa adicional e, caso necessário, um multiplicador de taxa. Este multiplicador surge para taxar cartas que, mesmo dentro da lista, se tornam cartas muito poderosas.
@@ -215,21 +216,21 @@
         </p>
         <h2>Restritas da zona de comando:</h2>
         <ul>
-            <li>Erayo, Soratami Ascendant // Erayo’s Essence (1.5x)</li>
-            <li>Golos, Tireless Pilgrim (1.5x)</li>
-            <li>Leovold, Emissary of Trest (1.5x)</li>
-            <li>Nadu, Winged Wisdom (1.5x)</li>
-            <li>Rofellos, Llanowar Emissary (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\erayo.jpg">Erayo, Soratami Ascendant (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\golos.jpg">Golos, Tireless Pilgrim (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\leovold.jpg">Leovold, Emissary of Trest (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\nadu.jpg">Nadu, Winged Wisdom (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\rofellos.jpg">Rofellos, Llanowar Emissary (1.5x)</li>
         </ul>
         <h2>Restritas do deck (podendo ser SOMENTE comandante):</h2>
         <ul>
-            <li>Emrakul, the Aeons Torn</li>
-            <li>Griselbrand</li>
-            <li>Iona, Shield of Emeria</li>
+            <li class="hover-img" data-img="images\cards\emrakul.jpg">Emrakul, the Aeons Torn</li>
+            <li class="hover-img" data-img="images\cards\griselbrand.jpg">Griselbrand</li>
+            <li class="hover-img" data-img="images\cards\iona.jpg">Iona, Shield of Emeria</li>
         </ul>
         <h2>Restritas como companion:</h2>
         <ul>
-            <li>Lutri, the Spellchaser</li>
+            <li class="hover-img" data-img="images\cards\lutri.jpg">Lutri, the Spellchaser</li>
         </ul>
         <p>
             Por fim, vamos falar das cartas <b>taxadas</b>, estas não estão restritas em nenhuma zona, porém elas terão uma taxação base, no qual a pontuação da carta será multiplicada por 50. Seguindo a mesma lógica das restritas, terão cartas que devido ao seu power level necessitarão de uma taxação adicional, tendo então um <b>multiplicador adicional</b> que pode ser ajustado ou implantado caso uma carta se mostre forte demais.
@@ -239,107 +240,136 @@
         </p>
         <h2>Criaturas:</h2>
         <ul>
-            <li>Hullbreacher (1.5x)</li>
-            <li>Prophet of Kruphix (1.5x)</li>
-            <li>Primeval Titan (1.5x)</li>
-            <li>Sylvan Primordial (1.5x)</li>
-            <li>Sundering Titan (1.5x)</li>
-            <li>Dockside Extortionist (1.5x)</li>
-            <li>Opposition Agent</li>
-            <li>Drannith Magistrate</li>
-            <li>Consecrated Sphinx</li>
-            <li>Thassa’s Oracle</li>
-            <li>Braids, Cabal Minion</li>
-            <li>Orcish Bowmasters</li>
-            <li>Tergrid, God of Fright</li>
-            <li>Seedborn Muse</li>
-            <li>Grand Arbiter Augustin IV</li>
-            <li>Notion Thief</li>
-            <li>Esper Sentinel</li>
-            <li>Kinnan, Bonder Prodigy</li>
-            <li>Urza, Lord High Artificer</li>
-            <li>Winota, Joiner of Forces</li>
-            <li>Yuriko, the Tiger’s Shadow</li>
+            <li class="hover-img" data-img="images\cards\braids.jpg">Braids, Cabal Minion</li>
+            <li class="hover-img" data-img="images\cards\consecrated-sphynx.jpg">Consecrated Sphinx</li>
+            <li class="hover-img" data-img="images\cards\dockside-extortionist.jpg">Dockside Extortionist (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\drannith-magistrate.jpg">Drannith Magistrate</li>
+            <li class="hover-img" data-img="images\cards\esper-sentinel.jpg">Esper Sentinel</li>
+            <li class="hover-img" data-img="images\cards\gaaiv.jpg">Grand Arbiter Augustin IV</li>
+            <li class="hover-img" data-img="images\cards\hullbreacher.jpg">Hullbreacher (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\kinnan.jpg">Kinnan, Bonder Prodigy</li>
+            <li class="hover-img" data-img="images\cards\notion-thief.jpg">Notion Thief</li>
+            <li class="hover-img" data-img="images\cards\opposition-agent.jpg">Opposition Agent</li>
+            <li class="hover-img" data-img="images\cards\orcish-bowmasters.jpg">Orcish Bowmasters</li>
+            <li class="hover-img" data-img="images\cards\primeval-titan.jpg">Primeval Titan (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\prophet-of-kruphix.jpg">Prophet of Kruphix (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\seedborn-muse.jpg">Seedborn Muse</li>
+            <li class="hover-img" data-img="images\cards\sundering-titan.jpg">Sundering Titan (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\sylvan-primordial.jpg">Sylvan Primordial (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\tergrid.jpg">Tergrid, God of Fright</li>
+            <li class="hover-img" data-img="images\cards\thoracle.jpg">Thassa’s Oracle</li>
+            <li class="hover-img" data-img="images\cards\urza.jpg">Urza, Lord High Artificer</li>
+            <li class="hover-img" data-img="images/cards/winota.jpg">Winota, Joiner of Forces</li>
+            <li class="hover-img" data-img="images\cards\yuriko.jpg">Yuriko, the Tiger’s Shadow</li>
         </ul>
         <h2>Artefatos:</h2>
         <ul>
-            <li>Mana Crypt (1.5x)</li>
-            <li>Jeweled Lotus (1.5x)</li>
-            <li>Lion’s Eye Diamond</li>
-            <li>Chrome Mox</li>
-            <li>Mox Diamond</li>
-            <li>Mana Vault</li>
-            <li>Sol Ring</li>
-            <li>Paradox Engine (1.5x)</li>
-            <li>Grim Monolith</li>
-            <li>The One Ring</li>
-            <li>Panoptic Mirror</li>
-            <li>Bolas’s Citadel</li>
+            <li class="hover-img" data-img="images\cards\bolas-citadel.jpg">Bolas’s Citadel</li>
+            <li class="hover-img" data-img="images\cards\chrome-mox.jpg">Chrome Mox</li>
+            <li class="hover-img" data-img="images\cards\grim-monolith.jpg">Grim Monolith</li>
+            <li class="hover-img" data-img="images\cards\jeweled-lotus.jpg">Jeweled Lotus (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\led.jpg">Lion’s Eye Diamond</li>
+            <li class="hover-img" data-img="images\cards\mana-crypt.jpg">Mana Crypt (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\mana-vault.jpg">Mana Vault</li>
+            <li class="hover-img" data-img="images\cards\mox-diamond.jpg">Mox Diamond</li>
+            <li class="hover-img" data-img="images\cards\panoptic-mirror.jpg">Panoptic Mirror</li>
+            <li class="hover-img" data-img="images\cards\paradox-engine.jpg">Paradox Engine (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\sol-ring.jpg">Sol Ring</li>
+            <li class="hover-img" data-img="images\cards\one-ring.jpg">The One Ring</li>
         </ul>
         <h2>Mágicas Instantâneas:</h2>
         <ul>
-            <li>Flash (1.5x)</li>
-            <li>Enlightened Tutor (1.5x)</li>
-            <li>Teferi’s Protection</li>
-            <li>Cyclonic Rift</li>
-            <li>Force of Will (1.5x)</li>
-            <li>Force of Negation</li>
-            <li>Fierce Guardianship</li>
-            <li>Deadly Rollick</li>
-            <li>Deflecting Swat</li>
-            <li>Mana Drain (1.5x)</li>
-            <li>Gifts Ungiven</li>
-            <li>Intuition</li>
-            <li>Mystical Tutor (1.5x)</li>
-            <li>Ad Nauseam</li>
-            <li>Vampiric Tutor (1.5x)</li>
-            <li>Crop Rotation</li>
-            <li>Worldly Tutor (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\ad-nauseam.jpg">Ad Nauseam</li>
+            <li class="hover-img" data-img="images\cards\crop-rotation.jpg">Crop Rotation</li>
+            <li class="hover-img" data-img="images\cards\cyclonic-rift.jpg">Cyclonic Rift</li>
+            <li class="hover-img" data-img="images\cards\deadly-rollick.jpg">Deadly Rollick</li>
+            <li class="hover-img" data-img="images\cards\deflecting-swat.jpg">Deflecting Swat</li>
+            <li class="hover-img" data-img="images\cards\enlightened-tutor.jpg">Enlightened Tutor (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\fierce-guardianship.jpg">Fierce Guardianship</li>
+            <li class="hover-img" data-img="images\cards\flash.jpg">Flash (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\force-of-negation.jpg">Force of Negation</li>
+            <li class="hover-img" data-img="images\cards\force-of-will.jpg">Force of Will (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\gifts-ungiven.jpg">Gifts Ungiven</li>
+            <li class="hover-img" data-img="images\cards\intuition.jpg">Intuition</li>
+            <li class="hover-img" data-img="images\cards\mana-drain.jpg">Mana Drain (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\mystical-tutor.jpg">Mystical Tutor (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\teferi-protection.jpg">Teferi’s Protection</li>
+            <li class="hover-img" data-img="images\cards\vampiric-tutor.jpg">Vampiric Tutor (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\worldly-tutor.jpg">Worldly Tutor (1.5x)</li>
         </ul>
-        <h2>Planeswalker:</h2>
+        <h2>Planeswalkers:</h2>
         <ul>
-            <li>Narset, Parter of Veils</li>
+            <li class="hover-img" data-img="images\cards\narset.jpg">Narset, Parter of Veils</li>
         </ul>
         <h2>Encantamentos:</h2>
         <ul>
-            <li>Limited Resources (1.5x)</li>
-            <li>Recurring Nightmare (1.5x)</li>
-            <li>Humility</li>
-            <li>Smothering Tithe</li>
-            <li>Mystic Remora (1.5x)</li>
-            <li>Rhystic Study (2.0x)</li>
-            <li>Necropotence</li>
-            <li>Underworld Breach</li>
-            <li>Survival of the Fittest (1.5x)</li>
-            <li>Aura Shards</li>
+            <li class="hover-img" data-img="images\cards\aura-shards.jpg">Aura Shards</li>
+            <li class="hover-img" data-img="images\cards\humility.jpg">Humility</li>
+            <li class="hover-img" data-img="images\cards\limited-resources.jpg">Limited Resources (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\mystic-remora.jpg">Mystic Remora (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\necropotence.jpg">Necropotence</li>
+            <li class="hover-img" data-img="images\cards\recurring-nightmare.jpg">Recurring Nightmare (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\rhystic-study.jpg">Rhystic Study (2.0x)</li>
+            <li class="hover-img" data-img="images\cards\smothering-tithe.jpg">Smothering Tithe</li>
+            <li class="hover-img" data-img="images\cards\survival-of-the-fittest.jpg">Survival of the Fittest (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\underworld-breach.jpg">Underworld Breach</li>
         </ul>
         <h2>Feitiços:</h2>
         <ul>
-            <li>Trade Secrets (1.5x)</li>
-            <li>Upheaval</li>
-            <li>Biorhythm</li>
-            <li>Demonic Tutor (2.0x)</li>
-            <li>Imperial Seal</li>
-            <li>Gamble</li>
-            <li>Jeska’s Will</li>
-            <li>Natural Order</li>
+            <li class="hover-img" data-img="images\cards\biorhythm.jpg">Biorhythm</li>
+            <li class="hover-img" data-img="images\cards\demonic-tutor.jpg">Demonic Tutor (2.0x)</li>
+            <li class="hover-img" data-img="images\cards\gamble.jpg">Gamble</li>
+            <li class="hover-img" data-img="images\cards\imperial-seal.jpg">Imperial Seal</li>
+            <li class="hover-img" data-img="images\cards\jeska-will.jpg">Jeska’s Will</li>
+            <li class="hover-img" data-img="images\cards\natural-order.jpg">Natural Order</li>
+            <li class="hover-img" data-img="images\cards\trade-secrets.jpg">Trade Secrets (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\upheaval.jpg">Upheaval</li>
         </ul>
         <h2>Terrenos:</h2>
         <ul>
-            <li>Urza's Saga</li>
-            <li>Serra’s Sanctum (1.5x)</li>
-            <li>Gaea’s Cradle (1.5x)</li>
-            <li>Ancient Tomb (1.5x)</li>
-            <li>City of Traitors</li>
-            <li>Field of the Dead</li>
-            <li>Glacial Chasm</li>
-            <li>The Tabernacle at Pendrell Vale (1.5x)</li>
-            <li>Mishra’s Workshop (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\ancient-tomb.jpg">Ancient Tomb (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\city-of-traitors.jpg">City of Traitors</li>
+            <li class="hover-img" data-img="images\cards\field-of-the-dead.jpg">Field of the Dead</li>
+            <li class="hover-img" data-img="images\cards\gaea-cradle.jpg">Gaea’s Cradle (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\glacial-chasm.jpg">Glacial Chasm</li>
+            <li class="hover-img" data-img="images\cards\mishra-workshop.jpg">Mishra’s Workshop (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\serra-sanctum.jpg">Serra’s Sanctum (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\tabernacle.jpg">The Tabernacle at Pendrell Vale (1.5x)</li>
+            <li class="hover-img" data-img="images\cards\urza-saga.jpg">Urza's Saga</li>
         </ul>
+        <div id="overlay">
+            <img src="" id="overlay-img">
+        </div>
     </section>
+    <section id="imagem" class="img-03"></section>
     <footer>
         <p>Copyright 2026(c) Estevan Carvalho Ribeiro, todos os direitos reservados</p>
         <p>Site criado por Andre Càrvalho</p>
     </footer>
+    <script>
+        const items = document.querySelectorAll('.hover-img');
+        const overlay = document.getElementById('overlay');
+        const overlayImg = document.getElementById('overlay-img');
+
+        items.forEach(item => {
+            item.addEventListener('mouseenter', (e) => {
+                overlayImg.src = item.dataset.img;
+                overlay.style.display = "flex";
+            });
+
+            item.addEventListener('mousemove', (e) => {
+                const offset = 10;
+                overlay.style.left = (e.clientX + offset) + 'px';
+                overlay.style.top = (e.clientY + offset) + 'px';
+                if (e.clientY + offset + 220 > window.innerHeight) {
+                    overlay.style.top = (e.clientY - offset - 300) + 'px';  
+                }
+            })
+
+            item.addEventListener('mouseleave', () => {
+                overlay.style.display = "none";
+            })
+        })
+    </script>
 </body>
 </html>
