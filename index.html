@@ -8,12 +8,13 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>Início</li>
-                <li>O que é</li>
-                <li>Regras</li>
-                <li>Banlist</li>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="#inicio" class="nav-link active">Início</a></li>
+                <li><a href="#oq" class="nav-link">O que é</a></li>
+                <li><a href="#regras" class="nav-link">Regras</a></li>
+                <li><a href="#banidas" class="nav-link">Banlist</a></li>
+                <span class="indicator"></span>
             </ul>
         </nav>
     </header>
@@ -370,6 +371,41 @@
                 overlay.style.display = "none";
             })
         })
+
+        const sections = document.querySelectorAll("section");
+        const links = document.querySelectorAll(".nav-link");
+        const indicator = document.querySelector(".indicator");
+
+        function moveIndicator(link) {
+        const rect = link.getBoundingClientRect();
+        const parentRect = document.querySelector(".menu").getBoundingClientRect();
+
+        indicator.style.width = rect.width + "px";
+        indicator.style.left = (rect.left - parentRect.left) + "px";
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+
+            links.forEach(l => l.classList.remove("active"));
+            activeLink.classList.add("active");
+
+            moveIndicator(activeLink);
+            }
+        });
+        }, {
+        threshold: 0.1
+        });
+
+        sections.forEach(section => observer.observe(section));
+
+        window.addEventListener("load", () => {
+        const firstActive = document.querySelector(".nav-link.active");
+        moveIndicator(firstActive);
+        });
     </script>
 </body>
 </html>

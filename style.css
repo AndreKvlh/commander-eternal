@@ -1,7 +1,13 @@
+@charset "UTF-8";
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -19,6 +25,45 @@ header > nav > ul > li {
     padding-right: 10px;
     padding-left: 10px;
     color: white
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a; /* fundo escuro */
+  padding: 16px 32px;
+  z-index: 1000;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 4px;
+  font-weight: 500;
+}
+
+.indicator {
+  position: absolute;
+  bottom: -6px;
+  height: 3px;
+  width: 0;
+  background: white;
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 #inicio {
@@ -76,7 +121,15 @@ section li.hover-img:hover {
     cursor: default;
 }
 
+#oq, #regras, #banidas {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
 
+#central {
+    text-align: center;
+    font-size: 1.5em;
+}
 
 #overlay {
     position: fixed;
